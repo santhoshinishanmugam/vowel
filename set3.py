@@ -6,6 +6,6 @@ if re.match(r'[a-z]', str , re.I):
       print("Vowel")
    else:
       print("Constant")
- else:
+else:
      print("invalid")
   
