@@ -1,7 +1,11 @@
-character=input()
-if(character=='A' or character=='a'or character=='E' or character=='e' or character=='I' or character=='i' or character=='O' or character=='o'
-   character=='U' or character=='u'):
-  print("Vowel")
-  else:
-    print("Constant")
+import re
+vowel = ['a','e','i','o','u']
+str = input()
+if re.match(r'[a-z]', str , re.I):
+   if str in vowel:
+      print("Vowel")
+   else:
+      print("Constant")
+   else:
+     print("invalid")
   
